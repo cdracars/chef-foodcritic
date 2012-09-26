@@ -7,6 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-execute "install-foodcritic" do
-  command "gem install foodcritic"
+gem_package "foodcritic" do
+  action :install
+  ignore_failure true
 end
